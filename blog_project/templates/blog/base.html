@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{%load blog_tags%}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title_block%} {%endblock%}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+<div class="content">
+    {%block content_block%}
+    {%endblock%}
+</div>
+<div class="sidebar">
+    <h2>Bunty's Blog</h2>
+    <p id="sb">The Total No. Of Posts Up to Today:<span id="pn"> {%my_tag%}</span></p>
+    <h3>Latest Posts:</h3>{%show_latest_posts 4%}
+    <h3>Most Commented Posts:</h3>
+    {%get_most_commented_posts as most_commented_posts%}
+    <ul>
+        {%for post in most_commented_posts%}
+        <li><a id="sb" href="{{post.get_absolute_url}}">{{post.title|title}}</a></li>
+        {%endfor%}
+    </ul>
+</div>
+</body>
+</html>

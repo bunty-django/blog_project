@@ -1,0 +1,50 @@
+.content{
+    width: 60%;
+    float: left;
+    padding-left: 30px;
+    background:greenyellow;
+}
+.sidebar{
+    width: 40%;
+    float:right;
+    padding: 10px;
+    background: red;
+}
+h1{
+    text-align: center;
+    border-bottom: 1px solid yellow;
+    padding-bottom: 10px;
+    font-family: serif;
+}
+body{
+    background-color: greenyellow;
+}
+#date{
+    color: rgb(32, 17, 236);
+    font-style: italic;
+    font-size: 20px;
+}
+a{
+    color:red;
+}
+#ch{
+    color: orange;
+    font-size: 20px;
+    border-bottom: solid yellow;
+}
+#cd{
+    color: blueviolet;
+    font-size: 17px;
+}
+
+#tg{
+    border: 2px solid grey;
+    background-color: antiquewhite;
+}
+#pn{
+    font-size: 40px;
+    color: green;
+}
+#sb{
+    color: white;
+}
